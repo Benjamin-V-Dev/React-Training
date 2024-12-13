@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+button{
+  @apply border px-2 py-1 rounded-md bg-slate-100 ;
+}
+
+form{
+  @apply w-[500px] flex flex-col p-6 border rounded-sm shadow-xl mx-auto m-10;
+}
+
+label{
+  @apply text-blue-600
+}
+
+input, textarea{
+@apply border rounded-sm mb-4 text-lg py-[4px] ps-[4px]
+}
+
+.heading2{
+  @apply text-4xl font-bold my-10
+}
