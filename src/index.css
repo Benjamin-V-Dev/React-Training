@@ -5,7 +5,10 @@
 
 :root {
   font-family: 'Roboto', sans-serif;
-  
+}
+
+main{
+  @apply mx-[5%] md:mx-[10%] lg:mx-[20%] xl:mx-[30%]
 }
 
 button{
@@ -13,7 +16,7 @@ button{
 }
 
 form{
-  @apply w-[500px] flex flex-col p-6 border rounded-sm shadow-xl mx-auto m-10;
+  @apply flex flex-col p-6 border rounded-sm shadow-xl mx-auto m-10;
 }
 
 label{

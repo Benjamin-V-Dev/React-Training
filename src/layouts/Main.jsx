@@ -15,7 +15,9 @@ export default function Main() {
                 <div className='flex justify-center mt-1'>Chargement...</div>
             ) : (
                 // Outlet
-                <Outlet />
+                <main>
+                    <Outlet />
+                </main>
             )}
 
             {/* Footer */}
