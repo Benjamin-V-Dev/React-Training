@@ -64,7 +64,7 @@ export default function Home() {
                 <Link
                     key={index}
                     to={project.href}
-                    className={`border p-4 flex flex-col md:flex-row gap-6 justify-start items-center rounded-md w-full md:p-6 md:w-[48%] ${
+                    className={`border p-6 flex gap-6 justify-start items-center rounded-md w-[48%] ${
                         project.level == 'Easy' ? 'bg-green-400' : ''
                     } ${project.level == 'Medium' ? 'bg-blue-400' : ''} ${
                         project.level == 'Hard' ? 'bg-red-400' : ''

@@ -8,7 +8,7 @@
 }
 
 main{
-  @apply mx-[5%] md:mx-[10%] lg:mx-[20%] xl:mx-[30%]
+  @apply mx-[5%] md:mx-[10%] lg:mx-[10%]
 }
 
 button{
@@ -17,6 +17,7 @@ button{
 
 form{
   @apply flex flex-col p-6 border rounded-sm shadow-xl mx-auto m-10;
+   @apply md:mx-[20%] lg:mx-[30%]
 }
 
 label{
