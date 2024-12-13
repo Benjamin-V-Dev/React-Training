@@ -36,7 +36,6 @@ export default function Projet4() {
                 <label htmlFor='name-input'>Name</label>
                 <input
                     type='text'
-                    name='name'
                     id='name-input'
                     required
                     /* On ajoute ici le name */
@@ -73,7 +72,6 @@ export default function Projet4() {
                 <label htmlFor='name-input'>Name</label>
                 <input
                     type='text'
-                    name='name'
                     id='name-input'
                     required
                     /* On ajoute ici le name */
