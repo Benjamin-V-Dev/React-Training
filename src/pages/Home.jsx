@@ -2,6 +2,12 @@ import { Link } from 'react-router-dom';
 
 const projects = [
     {
+        name: 'Méthodes',
+        description: 'Méthodes Javascript les plus utiles',
+        href: '/projet10',
+        level: 'Easy',
+    },
+    {
         name: 'Counter',
         description: 'Compteur avec useState',
         href: '/projet1',
@@ -39,20 +45,44 @@ const projects = [
     },
     {
         name: 'Checkbox/radio useState',
-        description: 'Récupérer la valeur d\'une checkbox ou d\'un radio',
+        description: "Récupérer la valeur d'une checkbox ou d'un radio",
         href: '/projet9',
         level: 'Easy',
     },
     {
-        name: 'Requettes CRUD',
+        name: 'Requettes CRUD (To Do List)',
         description: 'Créer un CRUD avec RealtimeDatabase (API)',
         href: '/projet7',
         level: 'Medium',
     },
     {
-        name: 'Requettes CRUD',
+        name: 'Requettes CRUD (To Do List)',
         description: 'Créer un CRUD avec FireStoreDatabase (BAAS)',
         href: '/projet8',
+        level: 'Medium',
+    },
+    {
+        name: 'Calculatrice IMC',
+        description: 'Création d\'une calculatrice IMC sans DB',
+        href: '/projet11',
+        level: 'Medium',
+    },
+    {
+        name: 'Slider',
+        description: 'Création d\'un slider',
+        href: '/projet12',
+        level: 'Medium',
+    },
+    {
+        name: 'Dropdown multiple',
+        description: 'Création d\'un dropdown avec ouverture de plusieurs items',
+        href: '/projet13',
+        level: 'Medium',
+    },
+    {
+        name: 'Dropdown unique',
+        description: 'Création d\'un dropdown avec ouverture d\'un seul item',
+        href: '/projet14',
         level: 'Medium',
     },
 ];

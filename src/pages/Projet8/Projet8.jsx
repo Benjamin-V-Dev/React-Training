@@ -93,7 +93,7 @@ export default function Projet8() {
         }
     };
 
-    // Modifier un item dans la DB (DELETE)
+    // Modifier un item dans la DB (UPDATE)
     const updateData = async (id, newValue) => {
         if (!newValue.trim()) {
             alert('La valeur ne peut pas être vide.');
@@ -302,7 +302,7 @@ export default function Item({ item, id, onDelete, onUpdate }) {
         }
     };
 
-    // Modifier un item dans la DB (DELETE)
+    // Modifier un item dans la DB (UPDATE)
     const updateData = async (id, newValue) => {
         if (!newValue.trim()) {
             alert('La valeur ne peut pas être vide.');
@@ -326,7 +326,7 @@ export default function Item({ item, id, onDelete, onUpdate }) {
     return (
         <>
             <PresentationProject
-                title={'Créer un CRUD avec une API'}
+                title={'Créer un CRUD avec une database'}
                 subtitle={'Utilisation de Firebase Firestore Database'}
             />
             <form onSubmit={postData}>

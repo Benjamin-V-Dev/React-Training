@@ -14,6 +14,11 @@ const Projet6 = lazy(() => import('./pages/Projet6/Projet6'));
 const Projet7 = lazy(() => import('./pages/Projet7/Projet7'));
 const Projet8 = lazy(() => import('./pages/Projet8/Projet8'));
 const Projet9 = lazy(() => import('./pages/Projet9/Projet9'));
+const Projet10 = lazy(() => import('./pages/Projet10/Projet10'));
+const Projet11 = lazy(() => import('./pages/Projet11/Projet11'));
+const Projet12 = lazy(() => import('./pages/Projet12/Projet12'));
+const Projet13 = lazy(() => import('./pages/Projet13/Projet13'));
+const Projet14 = lazy(() => import('./pages/Projet14/Projet14'));
 
 const router = createBrowserRouter([
     {
@@ -165,6 +170,81 @@ const router = createBrowserRouter([
                 /* On utilise le loader et on ajoute "export async function loader" dans "Projet1" pour que ca fonctionne */
                 loader: () =>
                     import('./pages/Projet9/Projet9').then((module) =>
+                        module.loader(),
+                    ),
+            },
+            /* les méthodes les plus utiles */
+            {
+                path: '/projet10',
+                element: (
+                    /* On ajoute suspense pour que lazy fonctionne correctement */
+                    <Suspense>
+                        <Projet10 />
+                    </Suspense>
+                ),
+                /* On utilise le loader et on ajoute "export async function loader" dans "Projet1" pour que ca fonctionne */
+                loader: () =>
+                    import('./pages/Projet10/Projet10').then((module) =>
+                        module.loader(),
+                    ),
+            },
+            /* Calculatrice IMC */
+            {
+                path: '/projet11',
+                element: (
+                    /* On ajoute suspense pour que lazy fonctionne correctement */
+                    <Suspense>
+                        <Projet11 />
+                    </Suspense>
+                ),
+                /* On utilise le loader et on ajoute "export async function loader" dans "Projet1" pour que ca fonctionne */
+                loader: () =>
+                    import('./pages/Projet11/Projet11').then((module) =>
+                        module.loader(),
+                    ),
+            },
+            /* Slider */
+            {
+                path: '/projet12',
+                element: (
+                    /* On ajoute suspense pour que lazy fonctionne correctement */
+                    <Suspense>
+                        <Projet12 />
+                    </Suspense>
+                ),
+                /* On utilise le loader et on ajoute "export async function loader" dans "Projet1" pour que ca fonctionne */
+                loader: () =>
+                    import('./pages/Projet12/Projet12').then((module) =>
+                        module.loader(),
+                    ),
+            },
+            /* Dropdown multiple */
+            {
+                path: '/projet13',
+                element: (
+                    /* On ajoute suspense pour que lazy fonctionne correctement */
+                    <Suspense>
+                        <Projet13 />
+                    </Suspense>
+                ),
+                /* On utilise le loader et on ajoute "export async function loader" dans "Projet1" pour que ca fonctionne */
+                loader: () =>
+                    import('./pages/Projet13/Projet13').then((module) =>
+                        module.loader(),
+                    ),
+            },
+            /* Dropdown unique */
+            {
+                path: '/projet14',
+                element: (
+                    /* On ajoute suspense pour que lazy fonctionne correctement */
+                    <Suspense>
+                        <Projet14 />
+                    </Suspense>
+                ),
+                /* On utilise le loader et on ajoute "export async function loader" dans "Projet1" pour que ca fonctionne */
+                loader: () =>
+                    import('./pages/Projet14/Projet14').then((module) =>
                         module.loader(),
                     ),
             },

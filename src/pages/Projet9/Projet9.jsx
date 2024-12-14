@@ -48,7 +48,7 @@ export default function Projet9() {
             <label>Checkbox</label>
         </div>
     );
-}`
+}`;
 
     return (
         <>
@@ -59,7 +59,7 @@ export default function Projet9() {
                 }
             />
             <div className='flex flex-col items-center mt-16 gap-2'>
-                <h2 className='heading2'>Button Radio</h2>
+                <h2 className='heading2'>Button Radio : {radio}</h2>
                 <div className='flex gap-2 justify-center items-center'>
                     <input
                         type='radio'
